@@ -1,0 +1,41 @@
+#https://help.3ds.com/2020x/english/DSDoc/MqlReferenceMap/mql-r-busobject-expand-syntax.htm?ContextScope=onpremise
+
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737;
+
+#https://help.3ds.com/2020x/english/dsdoc/mqlreferencemap/mql-r-busobject-expand-recurseclause.htm?contextscope=onpremise
+
+#to
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737 to;
+
+#from
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737 from;
+
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737 recurse to 1 to;
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737 recurse to 1 from;
+
+#recurse
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737 recurse to 2;
+
+#1  Data Vaults  to  Workspace Vault  Документация проекта  5D8C390000000AE45F478D62000006F1
+#1  Data Vaults  to  Workspace Vault  Задания ГИПа  5D8C390000000AE45F478D62000006F1
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737 recurse to 1 from relationship 'Data Vaults';
+||
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737 from relationship 'Data Vaults';
+||
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737 relationship 'Data Vaults'
+||
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737 type 'Workspace Vault';
+||
+expand bus 'Project Space' 'Тестовый проект НФ' 621598524770737 select bus where '(type == "Workspace Vault") && (1 == 1) ' dump
+||
+expand bus 'Project Space' 'Тестовый проект НФ' 621598524770737   rel 'Data Vaults' select bus   where ' (type == "Workspace Vault") && (1 == 1) ' dump
+
+expand bus 'Project Space' 'Тестовый проект НФ' 621598524770737 recurse to all rel 'Subtask' select bus   where ' (type == "Phase") && (1 == 1) ' dump
+
+#-
+expand bus 'Project Space' 'Тестовый проект НФ' 621598524770737 recurse to all rel 'Vaulted Documents Rev2' select bus   where ' (type == "GSPI_Document") && (1 == 1) ' dump
+
+#withroots
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737 recurse to 1 select bus id dump
+expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737 recurse to 1 withroots select bus id dump
+

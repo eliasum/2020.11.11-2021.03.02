@@ -1,0 +1,9 @@
+modify menu "PMCMyDesk" add command GSPI_MyTasks add command APPMyRoute;
+
+modify menu "PMCMyDesk" order command PMCAssignmentMyDesk 1 order command PMCProgramMyDesk 2 order command PMCProjectSpaceMyDesk 3 order command GSPI_MyTasks 4 order command APPMyRoute 5;
+
+modify menu "My Enovia" add command APPRouteTemplates;
+
+modify menu "My Enovia" order command AEFPowerViewHome 1 order command AEFCollections 2 order command APPRouteTemplates 3;
+
+modify menu "My Enovia" remove command APPMyTask remove command GSPI_MyTasks remove menu APPMyRoutes;

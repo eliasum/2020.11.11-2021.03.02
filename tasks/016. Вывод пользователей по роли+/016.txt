@@ -1,0 +1,16 @@
+#Поиск Person
+https://help.3ds.com/SearchEx.aspx?query=person&version=2020x&lang=english&prod=DSDoc&contextscope=onpremise
+
+#person Command
+https://help.3ds.com/2020x/english/DSDoc/MqlReferenceMap/mql-m-person-command-sb.htm?ContextScope=onpremise&id=e1d8919f7c6648c4804d26de5af253da#Pg0
+
+#person Command Syntax
+https://help.3ds.com/2020x/english/DSDoc/MqlReferenceMap/mql-r-person-syntax.htm?ContextScope=onpremise
+
+#List Admintype Command
+https://help.3ds.com/2020x/english/DSDoc/MqlReferenceMap/mql-r-list-admintype.htm?ContextScope=onpremise#mql-r-list-admintype
+
+#Select Clause
+https://help.3ds.com/2020x/english/DSDoc/MqlReferenceMap/mql-r-select-clause.htm?ContextScope=onpremise#mql-r-select-clause
+
+print role РОЛЬ

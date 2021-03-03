@@ -1,0 +1,13 @@
+# expand businessobject 'Project Space' 'Тестовый проект НФ' 621598524770737
+
+1  Member  to  Person  tsdragunova  -
+1  Subtask  to  Phase  Этап1  641598525163747
+1  Effort  to  Effort  Effort-0000327-01  -
+1  Member  to  Person  kvanzhenko  -
+1  Data Vaults  to  Workspace Vault  Документация проекта  5D8C390000000AE45F478D62000006F1
+1  Member  to  Person  mvgalyantich  -
+1  Member  to  Person  imminin  -
+1  Effort  to  Effort  Effort-0000895-01  -
+1  Company Project  from  Company  GSPI  -
+1  Project Access List  from  Project Access List  PAL-631598524771174  
+1  Approver Context  from  Weekly Timesheet  Sep 28-20 - Oct 04-20  WT261601626499021

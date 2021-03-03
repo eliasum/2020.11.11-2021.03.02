@@ -1,0 +1,196 @@
+#сервер---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+add table 'PMCProjectSpaceMyDesk' system description 'Project Summary' column name 'ProjectStatus' label '<img border=0 src=../common/images/iconStatus.gif></img>' setting 'Registered Suite' 'ProgramCentral' setting 'Column Type' 'programHTMLOutput' setting 'program' 'emxProjectSpace' setting 'function' 'getStatusIcon' user all column name 'Name' businessobject name label 'emxProgramCentral.Common.Name' href '${COMMON_DIR}/emxTree.jsp?mode=replace' setting 'Registered Suite' 'ProgramCentral' setting 'Target Location' 'content' setting 'Show Type Icon' 'true' user all column name 'Type' businessobject type label 'emxProgramCentral.Common.Type' setting 'Admin Type' 'Type' setting 'Registered Suite' 'ProgramCentral' setting 'Target Location' 'content' user all column name 'Status' businessobject current label 'emxProgramCentral.Common.Status' setting 'Registered Suite' 'ProgramCentral' setting 'Admin Type' 'State' user all column name 'Owner' label 'emxProgramCentral.Common.Owner' setting 'Registered Suite' 'ProgramCentral' setting 'Column Type' 'program' setting 'program' 'emxProjectSpace' setting 'function' 'showOwner' user all column name 'Est Finish' businessobject $<attribute[attribute_TaskEstimatedFinishDate].value> label 'emxProgramCentral.Common.EstimatedFinishDate' sorttype 'other' setting 'Registered Suite' 'ProgramCentral' setting 'format' 'date' setting 'Sort Type' 'date' user all column name 'Act Finish' businessobject $<attribute[attribute_TaskActualFinishDate].value> label 'emxProgramCentral.Common.ActFinishDate' sorttype 'other' setting 'Registered Suite' 'ProgramCentral' setting 'format' 'date' setting 'Sort Type' 'date' user all column name 'Created Date' businessobject $<originated> label 'emxProgramCentral.Common.CreatedDate' sorttype 'other' setting 'Registered Suite' 'ProgramCentral' setting 'format' 'date' setting 'Sort Type' 'date' user all column name 'Program' label 'emxProgramCentral.Common.Program' setting 'Registered Suite' 'ProgramCentral' setting 'Column Type' 'program' setting 'program' 'emxProjectSpace' setting 'function' 'getProgram' user all column name 'Description' businessobject description label 'emxProgramCentral.Common.Description' setting 'Registered Suite' 'ProgramCentral' setting 'Target Location' 'content' user all column name 'NewTree' href '${COMMON_DIR}/emxTree.jsp' setting 'Registered Suite' 'ProgramCentral' alt 'emxProgramCentral.Common.NewWindow' setting 'Column Icon' '../common/images/iconActionNewWindow.gif' setting 'Column Type' 'icon' setting 'Sortable' 'false' setting 'Target Location' 'popup' setting 'Window Height' '650' setting 'Window Width' '930' user all property application value 'ProgramManagementBase' property version value '10-6' property installer value 'ENOVIAEngineering' property 'installed date' value '12-03-2019' property 'original name' value 'PMCProjectSpaceMyDesk'
+modify table 'PMCProjectSpaceMyDesk' system column modify name 'Name' href '${COMMON_DIR}/emxTree.jsp?mode=replace&DefaultCategory=PMCGateDashboardCommandPowerView' setting 'RMB Menu' 'PMCListProjectRMBMenu' column modify name 'NewTree' href '${COMMON_DIR}/emxTree.jsp?DefaultCategory=PMCGateDashboardCommandPowerView' column modify name 'Program' remove setting 'Column Type' add setting 'Column Type' 'programHTMLOutput' property application value 'ProgramManagementBase' property version value 'R210'
+modify table 'PMCProjectSpaceMyDesk' system column modify name 'ProjectStatus' label '<img src="../common/images/iconStatus.gif" border="0" />' setting 'Width' '30' column name 'Vault' label 'emxProgramCentral.Common.Vault' setting 'Column Type' 'program' setting 'Registered Suite' 'ProgramCentral' setting 'function' 'getProjectVaults' setting 'program' 'emxProjectSpace' setting 'Auto Filter' 'true' order '11' column modify name 'NewTree' order '12' column modify name 'Status' setting 'Auto Filter' 'true' column modify name 'Type' setting 'Auto Filter' 'true' column modify name 'Owner' setting 'Auto Filter' 'true' column modify name 'Act Finish' setting 'Auto Filter' 'true' property application value 'ProgramManagementBase' property version value 'R214'
+modify table 'PMCProjectSpaceMyDesk' system column modify name 'ProjectStatus' setting 'RMB Menu' 'PMCListProjectRMBMenu' column modify name 'Type' setting 'RMB Menu' 'PMCListProjectRMBMenu' column modify name 'Status' setting 'RMB Menu' 'PMCListProjectRMBMenu' column modify name 'Owner' setting 'RMB Menu' 'PMCListProjectRMBMenu' column modify name 'Est Finish' setting 'RMB Menu' 'PMCListProjectRMBMenu' column modify name 'Act Finish' setting 'RMB Menu' 'PMCListProjectRMBMenu' column modify name 'Created Date' setting 'RMB Menu' 'PMCListProjectRMBMenu' column modify name 'Program' setting 'Access Program' 'emxProjectSpace' setting 'Access Function' 'isCalledFromProjects' setting 'RMB Menu' 'PMCListProjectRMBMenu' column modify name 'Description' setting 'RMB Menu' 'PMCListProjectRMBMenu' column modify name 'Vault' setting 'RMB Menu' 'PMCListProjectRMBMenu' setting 'Access Function' 'hasSecondaryVaultInProject' setting 'Access Program' 'emxProjectSpace' column modify name 'NewTree' setting 'RMB Menu' 'PMCListProjectRMBMenu' column name 'currentPhase' businessobject empty label 'emxProgramCentral.Common.CurrentTollgate' setting 'Column Type' 'programHTMLOutput' setting 'Export' 'true' setting 'Registered Suite' 'ProgramCentral' setting 'function' 'getCurrentPhase' setting 'program' 'emxProjectSpace' setting 'RMB Menu' 'PMCListProjectRMBMenu' order '3' property application value 'ProgramManagementBase' property version value 'R215'
+modify table 'PMCProjectSpaceMyDesk' system column delete name 'NewTree' column modify name 'Vault' setting 'Access Expression' 'false' column modify name 'currentPhase' remove setting 'Column Type' add setting 'Column Type' 'program' href '${COMMON_DIR}/emxTree.jsp?' column modify name 'Owner' setting 'format' 'user' property application value 'ProgramManagementBase' property version value 'R417'
+modify table 'PMCProjectSpaceMyDesk' system column modify name 'currentPhase' remove setting 'Column Type' add setting 'Column Type' 'programHTMLOutput' column modify name 'Name' href '${COMMON_DIR}/emxTree.jsp?mode=replace&DefaultCategory=PMCGateDashboardCommandPowerView&portalMode=true' property application value 'ProgramManagementBase' property version value 'R418'
+modify table 'PMCProjectSpaceMyDesk' system column name 'Project' businessobject project label 'emxProgramCentral.SecurityContext.ProjectTeam' setting 'Registered Suite' 'ProgramCentral' setting 'Sortable' 'true' order '7' property application value 'ProgramManagementBase' property version value 'R419'
+modify table 'PMCProjectSpaceMyDesk' system column modify name 'Est Finish' businessobject $<attribute[attribute_TaskEstimatedFinishDate].value> setting 'Field Type' 'attribute' property application value 'ProgramManagementBase' property version value 'R420'
+modify table 'PMCProjectSpaceMyDesk' system column modify name 'Created Date' businessobject $<originated> setting 'IgnoreTimeZone' 'true' column modify name 'Owner' businessobject owner remove setting 'Column Type' remove setting 'function' remove setting 'program' column modify name 'Program' businessobject $<to[Program Project].from.name> href '${COMMON_DIR}/emxTree.jsp?mode=insert' setting 'Alternate OID expression' 'to[Program Project].from.id' setting 'Alternate Type expression' 'to[Program Project].from.type' setting 'Show Alternate Icon' 'true' remove setting 'Column Type' remove setting 'function' remove setting 'program' column modify name 'Est Finish' setting 'IgnoreTimeZone' 'true' column modify name 'Act Finish' setting 'IgnoreTimeZone' 'true' property application value 'ProgramManagementBase' property version value 'R420'
+modify table 'PMCProjectSpaceMyDesk' system column modify name 'currentPhase' sorttype 'other' setting 'Sort Program' 'emxSortHTMLAlphaNumericBase' setting 'Sort Type' 'other' property application value 'ProgramManagementBase' property version value 'R420.HF1'
+modify table 'PMCProjectSpaceMyDesk' system column modify name 'ProjectStatus' remove setting 'program' add setting 'program' 'emxTaskBase' column modify name 'Name' sorttype 'other' setting 'Sort Program' 'emxSortHTMLAlphaNumericBase' setting 'Sort Type' 'other' column modify name 'Act Finish' label 'emxProgramCentral.Common.ActualFinishDate' column modify name 'Created Date' label 'emxProgramCentral.Common.Originated' column modify name 'Program' businessobject $<to[Program Project].from.name> href '${COMMON_DIR}/emxTree.jsp?mode=insert' remove setting 'Alternate OID expression' add setting 'Alternate OID expression' 'to[Program Project].from.id' remove setting 'Alternate Type expression' add setting 'Alternate Type expression' 'to[Program Project].from.type' remove setting 'Show Alternate Icon' add setting 'Show Alternate Icon' 'true' property application value 'ProgramManagementBase' property version value 'R421'
+
+#сервер построчно-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+add table 'PMCProjectSpaceMyDesk' system
+description 'Project Summary' 
+
+#01 column===========================================================
+	column name 'ProjectStatus' 
+	label '<img src="../common/images/iconStatus.gif" border="0" />' 
+	setting 'Width' '30'
+	setting 'Registered Suite' 'ProgramCentral' 
+	setting 'Column Type' 'programHTMLOutput'
+	setting 'program' 'emxTaskBase' 
+	setting 'function' 'getStatusIcon' 
+	setting 'RMB Menu' 'PMCListProjectRMBMenu'
+	user all 
+	
+#02 column===========================================================	
+	column name 'Name' 
+	businessobject name
+	label 'emxProgramCentral.Common.Name' 
+	href '${COMMON_DIR}/emxTree.jsp?mode=replace&DefaultCategory=PMCGateDashboardCommandPowerView&portalMode=true' 
+	setting 'RMB Menu' 'PMCListProjectRMBMenu' 
+	setting 'Registered Suite' 'ProgramCentral' 
+	setting 'Target Location' 'content' 
+	setting 'Show Type Icon' 'true' 
+	sorttype 'other' 
+	setting 'Sort Program' 'emxSortHTMLAlphaNumericBase' 
+	setting 'Sort Type' 'other' 
+	user all 
+	
+#03 column===========================================================	
+	column name 'currentPhase' 
+	businessobject empty 
+	label 'emxProgramCentral.Common.CurrentTollgate'
+	href '${COMMON_DIR}/emxTree.jsp?'
+	setting 'Column Type' 'programHTMLOutput'
+	setting 'Export' 'true' 
+	setting 'Registered Suite' 'ProgramCentral' 
+	setting 'function' 'getCurrentPhase' 
+	setting 'program' 'emxProjectSpace' 
+	setting 'RMB Menu' 'PMCListProjectRMBMenu'
+	sorttype 'other' 
+	setting 'Sort Program' 'emxSortHTMLAlphaNumericBase' 
+	setting 'Sort Type' 'other' 
+	order '3'	
+	
+#04 column===========================================================		
+	column name 'Type' 
+	businessobject type 
+	label 'emxProgramCentral.Common.Type' 
+	setting 'Admin Type' 'Type' 
+	setting 'Registered Suite' 'ProgramCentral' 
+	setting 'Target Location' 'content' 
+	setting 'Auto Filter' 'true'
+	setting 'RMB Menu' 'PMCListProjectRMBMenu'
+	user all 
+	
+#05 column===========================================================		
+	column name 'Status' 
+	businessobject current 
+	label 'emxProgramCentral.Common.Status' 
+	setting 'Registered Suite' 'ProgramCentral' 
+	setting 'Admin Type' 'State' 
+	setting 'Auto Filter' 'true' 
+	setting 'RMB Menu' 'PMCListProjectRMBMenu'
+	user all 
+	
+	
+#06 column===========================================================		
+	column name 'Owner' 
+	businessobject owner 
+	label 'emxProgramCentral.Common.Owner'
+	setting 'Registered Suite' 'ProgramCentral' 
+	setting 'Auto Filter' 'true' 
+	setting 'RMB Menu' 'PMCListProjectRMBMenu' 
+	setting 'format' 'user' 
+	user all 
+	
+#07 column===========================================================
+	column name 'Project'
+	businessobject $<attribute[attribute_TaskEstimatedFinishDate].value>
+	label 'emxProgramCentral.SecurityContext.ProjectTeam'	
+	setting 'Field Type' 'attribute' 
+	setting 'Registered Suite' 'ProgramCentral' 
+	setting 'Sortable' 'true' 
+	order '7' 	
+	
+#08 column===========================================================		
+	column name 'Est Finish' 
+	businessobject $<attribute[attribute_TaskEstimatedFinishDate].value> 
+	label 'emxProgramCentral.Common.EstimatedFinishDate' 
+	sorttype 'other' 
+	setting 'Registered Suite' 'ProgramCentral' 
+	setting 'format' 'date' 
+	setting 'Sort Type' 'date' 
+	setting 'RMB Menu' 'PMCListProjectRMBMenu' 
+	setting 'IgnoreTimeZone' 'true' 
+	user all 
+	
+#09 column===========================================================	
+	column name 'Act Finish' 
+	businessobject $<attribute[attribute_TaskActualFinishDate].value> 
+	label 'emxProgramCentral.Common.ActualFinishDate' 
+	sorttype 'other' 
+	setting 'Registered Suite' 'ProgramCentral' 
+	setting 'format' 'date' 
+	setting 'Sort Type' 'date'
+	setting 'Auto Filter' 'true'	
+	setting 'RMB Menu' 'PMCListProjectRMBMenu' 
+    setting 'IgnoreTimeZone' 'true' 
+	user all
+
+#10 column===========================================================	
+	column name 'Created Date' 
+	businessobject $<originated> 
+	label 'emxProgramCentral.Common.Originated'
+	setting 'IgnoreTimeZone' 'true'
+	sorttype 'other'
+	setting 'Registered Suite' 'ProgramCentral'
+	setting 'format' 'date' 
+	setting 'Sort Type' 'date'
+	setting 'RMB Menu' 'PMCListProjectRMBMenu' 
+	user all 
+	
+#11 column===========================================================	
+	column name 'Program'
+	businessobject $<to[Program Project].from.name> 
+	href '${COMMON_DIR}/emxTree.jsp?mode=insert' 
+	label 'emxProgramCentral.Common.Program' 
+	setting 'Registered Suite' 'ProgramCentral'
+	setting 'Access Program' 'emxProjectSpace'
+	setting 'Access Function' 'isCalledFromProjects' 
+	setting 'RMB Menu' 'PMCListProjectRMBMenu' 
+    setting 'Alternate OID expression' 'to[Program Project].from.id'
+	setting 'Alternate Type expression' 'to[Program Project].from.type'
+	setting 'Show Alternate Icon' 'true' 	
+	user all
+		
+#12 column===========================================================		
+	column name 'Description'
+	businessobject description 
+	label 'emxProgramCentral.Common.Description'
+	setting 'Registered Suite' 'ProgramCentral' 
+	setting 'Target Location' 'content' 
+	setting 'RMB Menu' 'PMCListProjectRMBMenu' 
+	user all 
+	
+#13 column===========================================================		
+	column name 'Vault'
+	label 'emxProgramCentral.Common.Vault'
+	setting 'Column Type' 'program' 
+	setting 'Registered Suite' 'ProgramCentral' 
+	setting 'function' 'getProjectVaults' 
+	setting 'program' 'emxProjectSpace' 
+	setting 'Auto Filter' 'true'
+	setting 'RMB Menu' 'PMCListProjectRMBMenu'
+	setting 'Access Function' 'hasSecondaryVaultInProject' 
+	setting 'Access Program' 'emxProjectSpace' 
+	setting 'Access Expression' 'false' 
+	order '11'	
+	
+#XX column===========================================================	
+#	column name 'NewTree' 
+#	href '${COMMON_DIR}/emxTree.jsp?DefaultCategory=PMCGateDashboardCommandPowerView' 
+#	setting 'Registered Suite' 'ProgramCentral' 
+#	alt 'emxProgramCentral.Common.NewWindow'
+#	setting 'Column Icon' '../common/images/iconActionNewWindow.gif' 
+#	setting 'Column Type' 'icon' 
+#	setting 'Sortable' 'false'
+#	setting 'Target Location' 'popup' 
+#	setting 'Window Height' '650' 
+#	setting 'Window Width' '930' 
+#	setting 'RMB Menu' 'PMCListProjectRMBMenu' 
+#	order '12'
+#	user all 
+	
+properties===========================================================		
+	property application value 'ProgramManagementBase' 
+	property version value 'R421'
+	property installer value 'ENOVIAEngineering' 
+	property 'installed date' value '12-03-2019'
+	property 'original name' value 'PMCProjectSpaceMyDesk'

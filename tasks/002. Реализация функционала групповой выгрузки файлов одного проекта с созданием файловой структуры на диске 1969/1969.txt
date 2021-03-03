@@ -1,0 +1,120 @@
+#Документ&Файлы
+emxComponents.DocumentSummary.ToolTipDownload=Download a copy of the file but keep it unlocked					#Скачивание
+emxComponents.DocumentSummary.ToolTipCheckout=Download and lock the file, prohibiting others from editing it	#Скачать и заблокировать файл, запретив другим его редактирование
+
+#Поиск в UA 'Download a copy of the file but keep it unlocked'
+https://help.3ds.com/SearchEx.aspx?query=Download+a+copy+of+the+file+but+keep+it+unlocked&version=2020x&lang=english&prod=DSDoc&contextscope=onpremise
+
+#Ссылки с описанием действий
+https://help.3ds.com/2020x/english/dsdoc/dclusermap/dcl-r-change-process-steps.htm?contextscope=onpremise
+https://help.3ds.com/2020x/english/DSDoc/DclUserMap/dcl-r-qsd-properties.htm?ContextScope=onpremise&id=50ed4565f71a464380992cd2f12bf2f8#Pg0
+https://help.3ds.com/2020x/english/DSDoc/CbsUserMap/cbs-r-document-properties.htm?ContextScope=onpremise#cbs-r-document-properties
+
+#Поиск в UA 'add Actions/Toolbar Commands'
+https://help.3ds.com/SearchEx.aspx?q=add+Actions%2fToolbar+Commands&sort=&version=2020x&lang=english&prod=DSDoc&contextscope=onpremise
+
+#Код JavaScript, обрабатывающий нажатие на кнопку скачивания файла 'Архитектура системы 3DEX.DOCX' документа 'Документос' папки 'Задания ГИПа' проекта 'Тестовый проект НФ':
+<a href="javascript:getTopWindow().callCheckout('42198.4965.20509.62734','download',%20'%5Cu0410%5Cu0440%5Cu0445%5Cu0438%5Cu0442%5Cu0435%5Cu043A%5Cu0442%5Cu0443%5Cu0440%5Cu0430%5Cx20%5Cu0441%5Cu0438%5Cu0441%5Cu0442%5Cu0435%5Cu043C%5Cu044B%5Cx203DEX.DOCX',%20'generic',%20null,%20null,%20null,%20null,%20'null',%20'1',null,null,%20null,null,%20null,null%20,null,null,%20null,%20'42198.4965.20510.922');"><img border="0" src="../common/images/iconActionDownload.gif" alt="Скачивание" title="Скачивание"></a>
+
+#Код JavaScript, обрабатывающий нажатие на кнопку скачивания файла 'GSPInews январь.pdf' документа 'Документос' папки 'Задания ГИПа' проекта 'Тестовый проект НФ':
+<a href="javascript:getTopWindow().callCheckout('42198.4965.20509.62734','download',%20'GSPInews%5Cx20%5Cu044F%5Cu043D%5Cu0432%5Cu0430%5Cu0440%5Cu044C.pdf',%20'generic',%20null,%20null,%20null,%20null,%20'null',%20'1',null,null,%20null,null,%20null,null%20,null,null,%20null,%20'42198.4965.62253.50838');"><img border="0" src="../common/images/iconActionDownload.gif" alt="Скачивание" title="Скачивание"></a>
+
+#Код JavaScript, обрабатывающий нажатие на кнопку скачивания документа 'Документос' папки 'Задания ГИПа' проекта 'Тестовый проект НФ':
+<a href="javascript:callCheckout(%2242198.4965.20509.62734%22,%22download%22,%20%22%22,%20%22%22,%22%22,%20%22%22,%20%22Table%22,%20%22PMCFolderSummary%22)"><img border="0" src="../common/images/iconActionDownload.gif" alt="Скачивание" title="Скачивание"></a>
+callCheckout("42198.4965.20509.62734","download","","","","","Table","PMCFolderSummary");
+
+#Файлы Java с текстом «ToolTipDownload»
+C:\R2019x\3DSpace\Apps\BusinessProcessServices\V6R2019x\JPOSrc\emxCommonDocumentUIBase_mxJPO.java
+C:\R2019x\3DSpace\Apps\BusinessProcessServices\V6R2019x\JPOSrc\emxCommonFileUIBase_mxJPO.java
+C:\R2019x\3DSpace\Apps\BusinessProcessServices\V6R2019x\JPOSrc\emxTeamContentBase_mxJPO.java
+C:\R2019x\3DSpace\Apps\BusinessProcessServices\V6R2019x\JPOSrc\emxVCDocumentUIBase_mxJPO.java
+C:\R2019x\3DSpace\Apps\FolderManagement\V6R2019x\JPOSrc\enoFolderManagementFolderBase_mxJPO.java
+C:\R2019x\3DSpace\Apps\ProgramCentral\V6R2019x\JPOSrc\emxBuildBase_mxJPO.java
+C:\R2019x\3DSpace\Apps\ProgramCentral\V6R2019x\JPOSrc\emxProgramCentralUtilBase_mxJPO.java
+C:\R2019x\3DSpace\Apps\ProgramCentral\V6R2019x\JPOSrc\emxProjectFolderBase_mxJPO.java
+
+#--UI--
+#User Interface
+https://help.3ds.com/2020x/english/DSDoc/DteCustomizingMap/dte-m-componentreview-ui-sb.htm?ContextScope=onpremise&id=7a03062cc34a4a0e95d4c84dfdbb3fd7#Pg0
+#Configurable Components
+https://help.3ds.com/2020x/english/DSDoc/DteCustomizingMap/dte-m-componentreview-configurablecomponents-sb.htm?ContextScope=onpremise
+#Common Document Model
+https://help.3ds.com/2020x/english/DSDoc/DteCustomizingMap/dte-m-commondocmodel-sb.htm?ContextScope=onpremise
+--
+
+# Cсылка на страницу скачивания файлов из документа ‘DOC-0000732’ с id = 42198.4965.20509.62734
+https://3dspace.aogspi.ru/3dspace/components/emxCommonDocumentPreCheckout.jsp?objectId=42198.4965.20509.62734&action=download
+
+# Cсылка на страницу скачивания файлов из папки ‘Задания ГИПа’ с id = 42198.4965.53188.21023
+https://3dspace.aogspi.ru/3dspace/components/emxCommonDocumentPreCheckout.jsp?objectId=42198.4965.53188.21023&action=download
+
+#Отчет о содержимом папки ‘Задания ГИПа’
+https://3dspace.aogspi.ru/3dspace/common/emxForm.jsp?form=PMCProjectFolderContentReportForm&suiteKey=ProgramCentral&formHeader=emxProgramCentral.Common.FolderContentReport&selectedIds=42198.4965.53188.21023&objectId=42198.4965.53188.21023&HelpMarker=emxhelpfoldercontentreport
+
+#Пункты бокового меню:
+#Документация проекта
+https://3dspace.aogspi.ru/3dspace/common/emxIndentedTable.jsp?tableMenu=PMCFolderTableMenu&toolbar=PMCFolderSummaryToolBar&header=emxProgramCentral.Common.Folders&objectCompare=true&HelpMarker=emxhelpfoldersummary&Export=true&displayView=details&selection=multiple&expandProgram=emxProjectFolder:getTableExpandProjectVaultData&freezePane=Title&sortColumnName=Name&preProcessJPO=emxProjectFolder:preProcessCheckForEdit&connectionProgram=emxProjectFolder:cutPasteObjectsInFolderStructureBrowser&editRelationship=relationship_SubVaults,relationship_VaultedDocumentsRev2&resequenceRelationship=relationship_ProjectVaults,relationship_SubVaults,relationship_VaultedDocumentsRev2&massPromoteDemote=false&postProcessJPO=emxTask:postProcessRefresh&editLink=true&mode=PMCFolder&emxSuiteDirectory=programcentral&treeLabel=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82+%D0%9D%D0%A4&otherTollbarParams=&suiteKey=ProgramCentral&StringResourceFileId=emxProgramCentralStringResource&SuiteDirectory=programcentral&objectId=42198.4965.52235.40444&widgetId=null
+
+#Контрольная Панель
+https://3dspace.aogspi.ru/3dspace/common/emxIndentedTable.jsp?toolbar=GSPI_ControlPanelToolbar&editLink=false&relationship=relationship_Subtask&direction=from&table=GSPI_ProjectControlPanel&selection=multiple&sortColumnName=ID&editRootNode=false&emxSuiteDirectory=gspi&treeLabel=%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82+%D0%9D%D0%A4&otherTollbarParams=&suiteKey=GSPI&StringResourceFileId=emxGSPIStringResource&SuiteDirectory=gspi&objectId=42198.4965.52235.40444&widgetId=null
+
+#Тестовая задача для определния иерархии
+https://3dspace.aogspi.ru/3dspace/common/emxNavigator.jsp?isPopup=false&objectId=42198.4965.63972.41063
+
+#ссылка на задачи:
+https://3dspace.aogspi.ru/3dspace/common/emxIndentedTable.jsp?program=emxTask:getAssignedWBSTask,emxTask:getAllWBSTask,emxTask:getCompletedWBSTask&programLabel=emxProgramCentral.Common.AssignedTasks,emxProgramCentral.Common.All,emxProgramCentral.Common.CompletedTasks&table=PMCAssignedWBSTaskSummary&toolbar=PMCActualEffortToolbar&header=emxProgramCentral.Common.Assignments&sortColumnName=EstFinishDate&sortDirection=ascending&Export=false&HelpMarker=emxhelpassignmentsummary&editLink=true&selection=multiple&freezePane=WBSTaskName&StringResourceFileId=emxProgramCentralStringResource&postProcessJPO=emxWeeklyTimeSheet:postProcessRefresh%27
+
+#ссылка на проекты
+https://3dspace.aogspi.ru/3dspace/common/emxIndentedTable.jsp?pageSize=25&parallelLoading=true&maxCellsToDraw=2000&scrollPageSize=50&program=emxProjectSpace%3AgetAssignedActiveProjects%2CemxProjectSpace%3AgetCredentialedActiveProjects%2CemxProjectSpace%3AgetArchiveCancelCompleteProjects%2CemxProjectSpace%3AgetAllOtherProjects&programLabel=emxProgramCentral.ProjectList.AssignedActive%2CemxProgramCentral.ProjectList.CredentialedActive%2CemxProgramCentral.Common.InActive%2CemxProgramCentral.Common.All&table=PMCProjectSpaceMyDesk&selection=multiple&header=emxProgramCentral.ProgramTop.Projects&sortColumnName=Name&sortDirection=ascending&Export=false&toolbar=PMCProjectSummaryToolBar&HelpMarker=emxhelpprojectsummary&freezePane=Name&expandLevelFilter=false&StringResourceFileId=emxProgramCentralStringResource&suiteKey=ProgramCentral&StringResourceFileId=emxProgramCentralStringResource&SuiteDirectory=programcentral&widgetId=null
+или
+https://3dspace.aogspi.ru/3dspace/common/
+emxIndentedTable.jsp?
+pageSize=25&
+parallelLoading=true&
+maxCellsToDraw=2000&
+scrollPageSize=50&
+program=emxProjectSpace%3AgetAssignedActiveProjects%2CemxProjectSpace%3AgetCredentialedActiveProjects%2CemxProjectSpace%3AgetArchiveCancelCompleteProjects%2CemxProjectSpace%3AgetAllOtherProjects&
+programLabel=emxProgramCentral.ProjectList.AssignedActive%2CemxProgramCentral.ProjectList.CredentialedActive%2CemxProgramCentral.Common.InActive%2CemxProgramCentral.Common.All&
+table=PMCProjectSpaceMyDesk&
+selection=multiple&
+header=emxProgramCentral.ProgramTop.Projects&
+sortColumnName=Name&
+sortDirection=ascending&
+Export=false&
+toolbar=PMCProjectSummaryToolBar&
+HelpMarker=emxhelpprojectsummary&
+freezePane=Name&expandLevelFilter=false&
+StringResourceFileId=emxProgramCentralStringResource&suiteKey=ProgramCentral&
+StringResourceFileId=emxProgramCentralStringResource&SuiteDirectory=programcentral&
+widgetId=null
+
+#Ссылки на проект НФ
+https://3dspace.aogspi.ru/3dspace/common/emxTree.jsp?isPopup=false&objectId=42198.4965.52235.40444
+https://3dspace.aogspi.ru/3dspace/common/emxNavigator.jsp?isPopup=true&mode=tree&isPopup=false&objectId=42198.4965.52235.40444
+
+emxIndentedTable.jsp?program=emxWorkspaceFolder:getWorkspaceFolders&table=TMCWorkspaceFolderSummary&header=emxTeamCentral.Name.Folders&toolbar=TMCWorkspaceFolderSummaryToolBar&sortColumnName=Name&sortDirection=ascending&selection=multiple&HelpMarker=emxhelpfolders
+
+#emxGSPIStringResource_en.properties
+	GSPI.Command.GSPI_PhysicalQuantityTask = Physical Quantity
+	GSPI.Command.Header.GSPI_PhysicalQuantityTask = Physical Quantity
+	GSPI.Command.GSPI_PhysicalQuantityProject = Physical Quantity
+	GSPI.Column.GSPI_ProjectControlPanel.PhysicalQuantity = Physical Quantity
+	
+#emxGSPIStringResource_ru.properties
+	GSPI.Command.GSPI_PhysicalQuantityTask = Физические Объемы
+	GSPI.Command.Header.GSPI_PhysicalQuantityTask = Физические Объемы
+	GSPI.Command.GSPI_PhysicalQuantityProject = Физические Объемы
+	GSPI.Column.GSPI_ProjectControlPanel.PhysicalQuantity = Физические Объемы
+	
+#Имена меток
+GSPI_DownloadProjectDocumentsLabel = Скачать документы проекта
+GSPI_DownloadProjectDocumentsLabel = Download project documents
+
+#Unicode escape 
+GSPI_DownloadProjectDocumentsLabel = \u0421\u043a\u0430\u0447\u0430\u0442\u044c\u0020\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b\u0020\u043f\u0440\u043e\u0435\u043a\u0442\u0430
+
+copy table PMCProjectSpaceMyDesk Projects2~PMCProjectSpaceMyDesk derived fromuser system touser 'Project Users';
+
+delete table Projects2~PMCProjectSpaceMyDesk user imminin;
+delete table Projects2~PMCProjectSpaceMyDesk user kvanzhenko;
+

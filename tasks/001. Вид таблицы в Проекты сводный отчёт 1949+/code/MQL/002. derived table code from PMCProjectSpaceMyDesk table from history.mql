@@ -1,0 +1,143 @@
+#пользователь---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+copy table PMCProjectSpaceMyDesk My_test_table~PMCProjectSpaceMyDesk derived
+modify table My_test_table~PMCProjectSpaceMyDesk column name Task_Actual_Start_Date label emxFramework.Attribute.Task_Actual_Start_Date businessobject $<attribute[attribute_TaskActualStartDate].value> setting 'Registered Suite' Framework setting 'Field Type' attribute setting Editable true setting format date sorttype other setting Sortable true setting 'Sort Type' date order 11 column name Task_Estimated_Start_Date label emxFramework.Attribute.Task_Estimated_Start_Date businessobject $<attribute[attribute_TaskEstimatedStartDate].value> setting 'Registered Suite' Framework setting 'Field Type' attribute setting Editable true setting format date sorttype other setting Sortable true setting 'Sort Type' date order 10 column name Task_Estimated_Duration label emxFramework.Attribute.Task_Estimated_Duration businessobject $<attribute[attribute_TaskEstimatedDuration].value> setting 'Registered Suite' Framework setting 'Field Type' attribute setting Editable true setting format numeric sorttype other setting Sortable true setting 'Sort Type' real order 12
+modify table "My_test_table~PMCProjectSpaceMyDesk"  property customSortColumns value "Name" property customSortDirections value ascending property customFreezePane value "Name"
+modify table "My_test_table~PMCProjectSpaceMyDesk" column modify name "Name" order "1" column modify name "ProjectStatus" order "2" column modify name "currentPhase" order "3" column modify name "Type" order "4" column modify name "Status" order "5" column modify name "Owner" order "6" column modify name "Created Date" order "7" column modify name "Est Finish" order "8" column modify name "Act Finish" order "9" column modify name "Task_Estimated_Start_Date" order "10" column modify name "Task_Actual_Start_Date" order "11" column modify name "Task_Estimated_Duration" order "12"
+modify table "My_test_table~PMCProjectSpaceMyDesk" column modify name "Program" hidden  column modify name "Description" hidden  column modify name "Project" hidden  column modify name "Vault" hidden
+modify table My_test_table~PMCProjectSpaceMyDesk property MX_CURRENT_TABLE value true
+
+#сервер---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+copy table PMCProjectSpaceMyDesk My_test_table2~PMCProjectSpaceMyDesk derived fromuser system touser imminin;
+modify table My_test_table2~PMCProjectSpaceMyDesk user imminin column name Task_Actual_Start_Date label emxFramework.Attribute.Task_Actual_Start_Date businessobject $<attribute[attribute_TaskActualStartDate].value> setting 'Registered Suite' Framework setting 'Field Type' attribute setting Editable true setting format date sorttype other setting Sortable true setting 'Sort Type' date order 11 column name Task_Estimated_Start_Date label emxFramework.Attribute.Task_Estimated_Start_Date businessobject $<attribute[attribute_TaskEstimatedStartDate].value> setting 'Registered Suite' Framework setting 'Field Type' attribute setting Editable true setting format date sorttype other setting Sortable true setting 'Sort Type' date order 10 column name Task_Estimated_Duration label emxFramework.Attribute.Task_Estimated_Duration businessobject $<attribute[attribute_TaskEstimatedDuration].value> setting 'Registered Suite' Framework setting 'Field Type' attribute setting Editable true setting format numeric sorttype other setting Sortable true setting 'Sort Type' real order 12;
+modify table "My_test_table2~PMCProjectSpaceMyDesk" user imminin property customSortColumns value "Name" property customSortDirections value ascending property customFreezePane value "Name";
+modify table "My_test_table2~PMCProjectSpaceMyDesk" user imminin column modify name "Name" order "1" column modify name "ProjectStatus" order "2" column modify name "currentPhase" order "3" column modify name "Type" order "4" column modify name "Status" order "5" column modify name "Owner" order "6" column modify name "Created Date" order "7" column modify name "Est Finish" order "8" column modify name "Act Finish" order "9" column modify name "Task_Estimated_Start_Date" order "10" column modify name "Task_Actual_Start_Date" order "11" column modify name "Task_Estimated_Duration" order "12";
+modify table "My_test_table2~PMCProjectSpaceMyDesk" user imminin column modify name "Program" hidden  column modify name "Description" hidden  column modify name "Project" hidden  column modify name "Vault" hidden;
+modify table My_test_table2~PMCProjectSpaceMyDesk user imminin property MX_CURRENT_TABLE value true;
+
+#сервер построчно-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#1 строка*******************************************************************************************************************************************************************************************************************************
+copy table PMCProjectSpaceMyDesk My_test_table2~PMCProjectSpaceMyDesk derived fromuser system touser imminin;
+
+#2 строка*******************************************************************************************************************************************************************************************************************************
+modify table My_test_table2~PMCProjectSpaceMyDesk user imminin 
+
+#11 column===========================================================
+	column name Task_Actual_Start_Date 
+	label emxFramework.Attribute.Task_Actual_Start_Date 
+	businessobject $<attribute[attribute_TaskActualStartDate].value> 
+	setting 'Registered Suite' Framework 
+	setting 'Field Type' attribute 
+	setting Editable true 
+	setting format date 
+	sorttype other 
+	setting Sortable true 
+	setting 'Sort Type' 
+	date order 11 
+	
+#10 column===========================================================	
+	column name Task_Estimated_Start_Date
+	label emxFramework.Attribute.Task_Estimated_Start_Date
+	businessobject $<attribute[attribute_TaskEstimatedStartDate].value> 
+	setting 'Registered Suite' Framework 
+	setting 'Field Type' attribute 
+	setting Editable true 
+	setting format date 
+	sorttype other 
+	setting Sortable true 
+	setting 'Sort Type' date 
+	order 10 
+	
+#12 column===========================================================	
+	column name Task_Estimated_Duration 
+	label emxFramework.Attribute.Task_Estimated_Duration
+	businessobject $<attribute[attribute_TaskEstimatedDuration].value> 
+	setting 'Registered Suite' Framework 
+	setting 'Field Type' attribute 
+	setting Editable true 
+	setting format numeric 
+	sorttype other 
+	setting Sortable true 
+	setting 'Sort Type' 
+	real order 12;
+	
+3 строка*******************************************************************************************************************************************************************************************************************************
+modify table "My_test_table2~PMCProjectSpaceMyDesk" user imminin 
+
+properties===========================================================	
+	property customSortColumns value "Name" 
+	property customSortDirections value ascending 
+	property customFreezePane value "Name";
+	
+4 строка*******************************************************************************************************************************************************************************************************************************
+modify table "My_test_table2~PMCProjectSpaceMyDesk" user imminin 
+
+#01 column===========================================================	
+	column modify name "Name"
+	order "1"
+
+#02 column===========================================================		
+	column modify name "ProjectStatus"
+	order "2"
+
+#03 column===========================================================
+	column modify name "currentPhase"
+	order "3"
+
+#04 column===========================================================
+	column modify name "Type" 
+	order "4" 
+	
+#05 column===========================================================	
+	column modify name "Status"
+	order "5" 
+	
+#06 column===========================================================	
+	column modify name "Owner"
+	order "6" 
+	
+#07 column===========================================================	
+	column modify name "Created Date" 
+	order "7"
+
+#08 column===========================================================
+	column modify name "Est Finish" 
+	order "8" 
+	
+#09 column===========================================================	
+	column modify name "Act Finish"
+	order "9" 
+	
+#10 column===========================================================	
+	column modify name "Task_Estimated_Start_Date"
+	order "10" 
+	
+#11 column===========================================================	
+	column modify name "Task_Actual_Start_Date" 
+	order "11" 
+	
+#12 column===========================================================	
+	column modify name "Task_Estimated_Duration" 
+	order "12";
+	
+5 строка*******************************************************************************************************************************************************************************************************************************
+modify table "My_test_table2~PMCProjectSpaceMyDesk" user imminin
+
+#14 column=========================================================== 
+	column modify name "Program" hidden
+	
+#15 column===========================================================	
+	column modify name "Description" hidden
+ 
+#13 column=========================================================== 
+	column modify name "Project" hidden 
+	
+#16 column===========================================================	
+	column modify name "Vault" hidden;
+
+6 строка*******************************************************************************************************************************************************************************************************************************
+modify table My_test_table2~PMCProjectSpaceMyDesk user imminin 
+
+properties===========================================================	
+property MX_CURRENT_TABLE value true;

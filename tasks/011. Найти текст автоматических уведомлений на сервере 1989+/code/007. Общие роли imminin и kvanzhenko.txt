@@ -1,0 +1,17 @@
+    Company Representative
+    Employee
+    Exchange User
+    GSPI
+    GSPI_Administrator
+    GSPI_Controller
+    GSPI_GIP
+    GSPI_IssueAdmin
+    GSPI_ProgramManager
+    GSPI_ProjectManager
+    GSPI_ProjectUser
+    MicrosoftOffice User
+    Organization Manager
+    ctx::Company Representative.GSPI.GLOBAL
+    ctx::Exchange User.GSPI.GLOBAL
+    ctx::Project Lead.GSPI.GLOBAL
+    ctx::VPLMProjectLeader.GSPI.PROD

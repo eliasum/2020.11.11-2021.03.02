@@ -1,0 +1,49 @@
+https://3dspace.aogspi.ru/3dspace/common/emxIndentedTable.jsp?program=emxWeeklyTimeSheet:getTimesheetInProcess,emxWeeklyTimeSheet:getTimesheetSubmitted,emxWeeklyTimeSheet:getTimesheetApproved,emxWeeklyTimeSheet:getTimesheetRejected,emxWeeklyTimeSheet:getWeeklyTimeSheets&table=PMCWeeklyTimeSheet&header=emxProgramCentral.WeeklyTimesheet.WeeklyTimeSheet&toolbar=PMCWeeklyTimeSheetToolBar&programLabel=emxProgramCentral.WeeklyTimesheet.InProcess,emxProgramCentral.WeeklyTimesheet.submitted,emxProgramCentral.WeeklyTimesheet.Approved,emxProgramCentral.WeeklyTimesheet.Rejected,emxProgramCentral.Common.All&selection=multiple&editLink=true&multiColumnSort=false&customize=true&sortColumnName=Week&sortDirection=descending&showClipboard=false&autoFilter=false&showPageURLIcon=false&suiteKey=ProgramCentral&objectCompare=false&rowGrouping=false&displayView=details&StringResourceFileId=emxProgramCentralStringResource&showTabHeader=true
+
+или
+
+https://3dspace.aogspi.ru/3dspace/common/emxIndentedTable.jsp?
+program=emxWeeklyTimeSheet:getTimesheetInProcess,
+emxWeeklyTimeSheet:getTimesheetSubmitted,
+emxWeeklyTimeSheet:getTimesheetApproved,
+emxWeeklyTimeSheet:getTimesheetRejected,
+emxWeeklyTimeSheet:getWeeklyTimeSheets&
+table=PMCWeeklyTimeSheet&
+header=emxProgramCentral.WeeklyTimesheet.WeeklyTimeSheet&toolbar=
+PMCWeeklyTimeSheetToolBar&programLabel=
+emxProgramCentral.WeeklyTimesheet.InProcess,
+emxProgramCentral.WeeklyTimesheet.submitted,
+emxProgramCentral.WeeklyTimesheet.Approved,
+emxProgramCentral.WeeklyTimesheet.Rejected,
+emxProgramCentral.Common.All&
+selection=multiple&
+editLink=true&
+multiColumnSort=false&customize=true&
+sortColumnName=Week&
+sortDirection=descending&
+showClipboard=false&
+autoFilter=false&showPageURLIcon=false&
+suiteKey=ProgramCentral&
+objectCompare=false&
+rowGrouping=false&displayView=details&
+StringResourceFileId=emxProgramCentralStringResource&
+showTabHeader=true
+
+https://3dspace.aogspi.ru/3dspace/common/emxPortal.jsp?portal=PMCWeeklyTimeSheet&header=emxProgramCentral.WeeklyTimesheet.WeeklyTimeSheet&HelpMarker=emxhelptimesheetlist
+
+emxUITableCustom.js
+
+emxUITableEditHeaderUtil.js
+
+	Line 2: emxMetricsStringResource_ru.properties
+	Line 8: whereusedStringResource_ru.properties
+	Line 10: emxGSPIStringResource_ru.properties
+	Line 11: emxProductLineStringResource_ru.properties
+	Line 17: emxFrameworkStringResource_ru.properties
+	Line 21: emxTeamCentralStringResource_ru.properties
+	Line 24: emxVPLMProductEditorStringResource_ru.properties
+	Line 31: emxWSManagementStringResource_ru.properties
+	Line 34: emxProgramCentralStringResource_ru.properties
+	Line 46: emxComponentsStringResource_ru.properties
+	
+	

@@ -1,0 +1,18 @@
+#Поиск "me menu preferences"
+https://help.3ds.com/SearchEx.aspx?q=me+menu+preferences&sort=&version=2021x&lang=English&prod=DSDoc&contextscope=cloud
+
+#Accessing and Customizing Preferences
+https://help.3ds.com/2021x/english/dsdoc/delawgusermap/arw-t-cu-settings.htm?contextscope=cloud
+
+# Dynamic UI components in emxFrameworkStringResource_ru.properties
+
+https://3de-test.aogspi.ru/3dspace/common/emxPreferences.jsp?suiteKey=Framework&StringResourceFileId=emxFrameworkStringResource&SuiteDirectory=common&widgetId=null&targetLocation=popup&popupSize=Large&isPopupModal=true&targetLocation=popup
+||
+https://3de-test.aogspi.ru/3dspace/common/emxPreferences.jsp
+
+https://3de-test.aogspi.ru/3dspace/common/emxPrefHomePageProcessing.jsp?homePage=AEFChannelUIHomePage
+
+https://3de-test.aogspi.ru/3dspace/common/emxPrefHomePage.jsp?homePage=AEFPowerViewHome
+https://3de-test.aogspi.ru/3dspace/common/emxPrefHomePage.jsp?homePage=AEFChannelUIHomePage
+
+https://3de-test.aogspi.ru/3dspace/common/emxNavigator.jsp?MenuName=%27My%20Tools%27&CommandName=AEFChannelUIHomePage

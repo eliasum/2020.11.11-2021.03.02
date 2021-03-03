@@ -1,0 +1,388 @@
+table           My_test_table~PMCProjectSpaceMyDesk
+ description  Project Summary
+ inactive
+
+ #1 column
+        label      emxProgramCentral.Common.Name								#Имя(emxProgramCentralStringResource_ru.properties)
+        businessobject name
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       Name
+        href       ${COMMON_DIR}/emxTree.jsp?mode=replace&DefaultCategory=PMCGateDashboardCommandPowerView&portalMode=true
+        sorttype   other
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Show Type Icon value true
+        setting    Sort Program value emxSortHTMLAlphaNumericBase
+        setting    Sort Type value other
+        setting    Target Location value content
+        user       all
+
+ #2 column
+        label      <img src="../common/images/iconStatus.gif" border="0" />
+        set
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       ProjectStatus
+        sorttype   none
+        setting    Column Type value programHTMLOutput
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Width value 30
+        setting    function value getStatusIcon
+        setting    program value emxTaskBase
+        user       all
+
+ #3 column
+        label      emxProgramCentral.Common.CurrentTollgate						#Текущий этап(emxProgramCentralStringResource_ru.properties)
+        businessobject empty
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       currentPhase
+        href       ${COMMON_DIR}/emxTree.jsp?
+        sorttype   other
+        setting    Column Type value programHTMLOutput
+        setting    Export value true
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Sort Program value emxSortHTMLAlphaNumericBase
+        setting    Sort Type value other
+        setting    function value getCurrentPhase
+        setting    program value emxProjectSpace
+
+ #4 column
+        label      emxProgramCentral.Common.Type								#Тип(emxProgramCentralStringResource_ru.properties)
+        businessobject type
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       Type
+        sorttype   none
+        setting    Admin Type value Type
+        setting    Auto Filter value true
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Target Location value content
+        user       all
+
+ #5 column
+        label      emxProgramCentral.Common.Status								#Статус(emxProgramCentralStringResource_ru.properties)
+        businessobject current
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       Status
+        sorttype   none
+        setting    Admin Type value State
+        setting    Auto Filter value true
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        user       all
+
+ #6 column
+        label      emxProgramCentral.Common.Owner								#Владелец(emxProgramCentralStringResource_ru.properties)
+        businessobject owner
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       Owner
+        sorttype   none
+        setting    Auto Filter value true
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    format value user
+        user       all
+
+ #7 column
+        label      emxProgramCentral.Common.Originated							#Создан(emxProgramCentralStringResource_ru.properties)
+        businessobject $<originated>
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       Created Date
+        sorttype   other
+        setting    IgnoreTimeZone value true
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Sort Type value date
+        setting    format value date
+        user       all
+
+ #8 column
+        label      emxProgramCentral.Common.EstimatedFinishDate					#Плановая дата окончания(emxProgramCentralStringResource_ru.properties)
+        businessobject $<attribute[attribute_TaskEstimatedFinishDate].value>
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       Est Finish
+        sorttype   other
+        setting    Field Type value attribute
+        setting    IgnoreTimeZone value true
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Sort Type value date
+        setting    format value date
+        user       all
+
+ #9 column
+        label      emxProgramCentral.Common.ActualFinishDate					#Фактическая дата завершения(emxProgramCentralStringResource_ru.properties)
+        businessobject $<attribute[attribute_TaskActualFinishDate].value>
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       Act Finish
+        sorttype   other
+        setting    Auto Filter value true
+        setting    IgnoreTimeZone value true
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Sort Type value date
+        setting    format value date
+        user       all
+
+ #10 column
+        label      emxFramework.Attribute.Task_Estimated_Start_Date				#Ожидаемая дата старта задачи(emxFrameworkStringResource_ru.properties)
+        businessobject $<attribute[attribute_TaskEstimatedStartDate].value>
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       Task_Estimated_Start_Date
+        sorttype   other
+        setting    Editable value true
+        setting    Field Type value attribute
+        setting    Registered Suite value Framework
+        setting    Sort Type value date
+        setting    Sortable value true
+        setting    format value date
+
+ #11 column
+        label      emxFramework.Attribute.Task_Actual_Start_Date				#Task Actual Start Date(emxFrameworkStringResource_en.properties)
+        businessobject $<attribute[attribute_TaskActualStartDate].value>
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       Task_Actual_Start_Date
+        sorttype   other
+        setting    Editable value true
+        setting    Field Type value attribute
+        setting    Registered Suite value Framework
+        setting    Sort Type value date
+        setting    Sortable value true
+        setting    format value date
+
+ #12 column
+        label      emxFramework.Attribute.Task_Estimated_Duration				#Ожидаемая длительность задачи(emxFrameworkStringResource_ru.properties)
+        businessobject $<attribute[attribute_TaskEstimatedDuration].value>
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       Task_Estimated_Duration
+        sorttype   other
+        setting    Editable value true
+        setting    Field Type value attribute
+        setting    Registered Suite value Framework
+        setting    Sort Type value real
+        setting    Sortable value true
+        setting    format value numeric
+
+ #13 column
+        label      emxProgramCentral.SecurityContext.ProjectTeam				#Рабочая область(emxProgramCentralStringResource_ru.properties)
+        businessobject project
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     true
+        name       Project
+        sorttype   none
+        setting    Registered Suite value ProgramCentral
+        setting    Sortable value true
+
+ #14 column
+        label      emxProgramCentral.Common.Program								#Программа(emxProgramCentralStringResource_ru.properties)
+        businessobject $<to[Program Project].from.name>
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     true
+        name       Program
+        href       ${COMMON_DIR}/emxTree.jsp?mode=insert
+        sorttype   none
+        setting    Access Function value isCalledFromProjects
+        setting    Access Program value emxProjectSpace
+        setting    Alternate OID expression value to[Program Project].from.id
+        setting    Alternate Type expression value to[Program Project].from.type
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Show Alternate Icon value true
+        user       all
+
+ #15 column
+        label      emxProgramCentral.Common.Description							#Описание(emxProgramCentralStringResource_ru.properties)
+        businessobject description
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     true
+        name       Description
+        sorttype   none
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Target Location value content
+        user       all
+
+ #16 column
+        label      emxProgramCentral.Common.Vault								#Хранилище
+        set
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     true
+        name       Vault
+        sorttype   none
+        setting    Access Expression value false
+        setting    Access Function value hasSecondaryVaultInProject
+        setting    Access Program value emxProjectSpace
+        setting    Auto Filter value true
+        setting    Column Type value program
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    function value getProjectVaults
+        setting    program value emxProjectSpace
+
+ #17 column
+        label      emxProgramCentral.Common.EffortPlan							
+        businessobject empty
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       EffortPlan
+        sorttype   none
+        setting    Auto Filter value true
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Target Location value content
+        user       all
+
+ #18 column
+        label      emxProgramCentral.Common.ActualLaborCosts
+        businessobject empty
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       ActualLaborCosts
+        sorttype   none
+        setting    Auto Filter value true
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Target Location value content
+        user       all
+
+ #19 column
+        label      emxProgramCentral.Common.PlannedPhysicalVolume
+        businessobject empty
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       PlannedPhysicalVolume
+        sorttype   none
+        setting    Auto Filter value true
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Target Location value content
+        user       all
+
+ #20 column
+        label      emxProgramCentral.Common.ActualPhysicalVolume
+        businessobject empty
+        size       0 0
+        minsize    0 0
+        autoheight false
+        autowidth  false
+        editable   false
+        hidden     false
+        name       ActualPhysicalVolume
+        sorttype   none
+        setting    Auto Filter value true
+        setting    RMB Menu value PMCListProjectRMBMenu
+        setting    Registered Suite value ProgramCentral
+        setting    Target Location value content
+        user       all
+
+  nothidden
+  property MX_CURRENT_TABLE value true
+  property application value ProgramManagementBase
+  property customFreezePane value Name
+  property customSortColumns value Name
+  property customSortDirections value ascending
+  property installed date value 12-03-2019
+  property installer value ENOVIAEngineering
+  property original name value PMCProjectSpaceMyDesk
+  property version value R421
+  created 1/25/2021 1:29:21 PM
+  modified 1/25/2021 1:29:21 PM
+  history  type:create user:User Agent date:1/25/2021 1:29:21 PM text:copy table PMCProjectSpaceMyDesk My_test_table~PMCProjectSpaceMyDesk derived fromuser system touser asnam;
+  history  type:modify user:User Agent date:1/25/2021 1:29:21 PM text:modify table My_test_table~PMCProjectSpaceMyDesk user asnam column name Task_Actual_Start_Date label emxFramework.Attribute.Task_Actual_Start_Date businessobject $<attribute[attribute_TaskActualStartDate].value> setting 'Registered Suite' Framework setting 'Field Type' attribute setting Editable true setting format date sorttype other setting Sortable true setting 'Sort Type' date order 11 column name Task_Estimated_Start_Date label emxFramework.Attribute.Task_Estimated_Start_Date businessobject $<attribute[attribute_TaskEstimatedStartDate].value> setting 'Registered Suite' Framework setting 'Field Type' attribute setting Editable true setting format date sorttype other setting Sortable true setting 'Sort Type' date order 10 column name Task_Estimated_Duration label emxFramework.Attribute.Task_Estimated_Duration businessobject $<attribute[attribute_TaskEstimatedDuration].value> setting 'Registered Suite' Framework setting 'Field Type' attribute setting Editable true setting format numeric sorttype other setting Sortable true setting 'Sort Type' real order 12;
+  history  type:modify user:User Agent date:1/25/2021 1:29:21 PM text:modify table "My_test_table~PMCProjectSpaceMyDesk" user asnam property customSortColumns value "Name" property customSortDirections value ascending property customFreezePane value "Name";
+  history  type:modify user:User Agent date:1/25/2021 1:29:21 PM text:modify table "My_test_table~PMCProjectSpaceMyDesk" user asnam column modify name "Name" order "1" column modify name "ProjectStatus" order "2" column modify name "currentPhase" order "3" column modify name "Type" order "4" column modify name "Status" order "5" column modify name "Owner" order "6" column modify name "Created Date" order "7" column modify name "Est Finish" order "8" column modify name "Act Finish" order "9" column modify name "Task_Estimated_Start_Date" order "10" column modify name "Task_Actual_Start_Date" order "11" column modify name "Task_Estimated_Duration" order "12";
+  history  type:modify user:User Agent date:1/25/2021 1:29:21 PM text:modify table "My_test_table~PMCProjectSpaceMyDesk" user asnam column modify name "Program" hidden  column modify name "Description" hidden  column modify name "Project" hidden  column modify name "Vault" hidden;
+  history  type:modify user:User Agent date:1/25/2021 1:29:21 PM text:modify table My_test_table~PMCProjectSpaceMyDesk user asnam property MX_CURRENT_TABLE value true;
+  history  type:modify user:User Agent date:1/25/2021 1:29:21 PM text: modify table "My_test_table~PMCProjectSpaceMyDesk" user asnam column name 'EffortPlan' businessobject empty label 'emxProgramCentral.Common.EffortPlan' setting 'Registered Suite' 'ProgramCentral' setting 'Target Location' 'content' setting 'Auto Filter' 'true' setting 'RMB Menu' 'PMCListProjectRMBMenu' user all;
+  history  type:modify user:User Agent date:1/25/2021 1:29:21 PM text:modify table "My_test_table~PMCProjectSpaceMyDesk" user asnam column name 'ActualLaborCosts' businessobject empty label 'emxProgramCentral.Common.ActualLaborCosts' setting 'Registered Suite' 'ProgramCentral' setting 'Target Location' 'content' setting 'Auto Filter' 'true' setting 'RMB Menu' 'PMCListProjectRMBMenu' user all;
+  history  type:modify user:User Agent date:1/25/2021 1:29:21 PM text:modify table "My_test_table~PMCProjectSpaceMyDesk" user asnam column name 'PlannedPhysicalVolume' businessobject empty label 'emxProgramCentral.Common.PlannedPhysicalVolume' setting 'Registered Suite' 'ProgramCentral' setting 'Target Location' 'content' setting 'Auto Filter' 'true' setting 'RMB Menu' 'PMCListProjectRMBMenu' user all;
+  history  type:modify user:User Agent date:1/25/2021 1:29:21 PM text:modify table "My_test_table~PMCProjectSpaceMyDesk" user asnam column name 'ActualPhysicalVolume' businessobject empty label 'emxProgramCentral.Common.ActualPhysicalVolume' setting 'Registered Suite' 'ProgramCentral' setting 'Target Location' 'content' setting 'Auto Filter' 'true' setting 'RMB Menu' 'PMCListProjectRMBMenu' user all;

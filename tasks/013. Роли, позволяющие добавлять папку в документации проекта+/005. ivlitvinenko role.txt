@@ -1,0 +1,14 @@
+  Employee
+  Exchange User
+  GSPI
+  GSPI_Controller
+  GSPI_GIP
+  GSPI_ProjectUser
+  Grant.GSPI.ivlitvinenko_PRJ
+  MicrosoftOffice User
+  Project User
+  ctx::Exchange User.GSPI.GLOBAL
+  ctx::Project Lead.GSPI.PROD
+  ctx::Project User.GSPI.GLOBAL
+  ctx::Project User.GSPI.PROD
+  ctx::VPLMCreator.GSPI.PROD

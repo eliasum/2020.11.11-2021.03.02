@@ -1,0 +1,25 @@
+add command "GSPI_DownloadProjectDocuments";	
+
+mod command "GSPI_DownloadProjectDocuments" !hidden href "" description "" alt "" label "";
+
+mod command GSPI_DownloadProjectDocuments 
+	label GSPI_DownloadProjectDocuments 
+	href ${COMMON_DIR}/emxDownloadDocs.jsp
+	alt '' 
+	add user imminin;
+	
+mod menu type_ProjectSpace add command GSPI_DownloadProjectDocuments;
+
+mod command GSPI_DownloadProjectDocuments name GSPI_DownloadProjectDocumentsCommand; 
+
+mod command GSPI_DownloadProjectDocumentsCommand href '${COMMON_DIR}/emxPortal.jsp?portal=PMCSchedule&showPageHeader=false&HelpMarker=emxhelpprojectdetails';
+
+mod command GSPI_DownloadProjectDocumentsCommand href '${COMMON_DIR}/emxNavigator.jsp?isPopup=true&mode=tree&isPopup=false&objectId=42198.4965.52235.40444';
+
+mod command GSPI_DownloadProjectDocumentsCommand href '';
+
+mod command GSPI_DownloadProjectDocumentsCommand href '${COMMON_DIR}/emxTree.jsp?isPopup=false&objectId=42198.4965.52235.40444';
+
+mod command GSPI_DownloadProjectDocumentsCommand href '${COMPONENT_DIR}/emxCommonDocumentPreCheckout.jsp?objectId=42198.4965.20509.62734&action=download';
+
+mod command GSPI_DownloadProjectDocumentsCommand href '${COMPONENT_DIR}/emxCommonDocumentPreCheckout.jsp?objectId=${"OBJECTID"}&action=download';

@@ -1,0 +1,33 @@
+    Company Representative
+    Employee
+    Exchange User
+    GSPI
+    GSPI_3DProcessEngineer
+    GSPI_Administrator
+    GSPI_CEO
+    GSPI_Controller
+    GSPI_DEF
+    GSPI_GIP
+    GSPI_HeadOfDepartment
+    GSPI_IssueAdmin
+    GSPI_MTO
+    GSPI_ProgramManager
+    GSPI_ProjectManager
+    GSPI_ProjectUser
+    GSPI_RequirementManager
+    GSPI_ResponsibleCommissioning
+    GSPI_ResponsibleSMR
+    GSPI_RiskManager
+    GSPI_SeniorProjectEngineer
+    GSPI_TopManagement
+    Grant.GSPI.imminin_PRJ
+    MicrosoftOffice User
+    Organization Manager
+    Project Lead
+    Project User
+    ctx::Company Representative.GSPI.GLOBAL
+    ctx::Exchange User.GSPI.GLOBAL
+    ctx::Organization Manager.GSPI.GLOBAL
+    ctx::Project Lead.GSPI.GLOBAL
+    ctx::Project User.GSPI.GLOBAL
+    ctx::VPLMProjectLeader.GSPI.PROD

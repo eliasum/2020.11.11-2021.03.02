@@ -1,0 +1,8 @@
+emxProgramCentral.BusinessGoal.ActualPartial = Факт (частично)
+emxProgramCentral.BusinessGoal.ActualTotal = Факт (всего)
+emxProgramCentral.Common.ActCost = Факт. стоимость
+emxProgramCentral.Common.ActBenefit = Факт. выгода
+emxProgramCentral.Common.ActNetBenefit = Факт. чистая прибыль
+emxProgramCentral.Common.Total = Факт
+emxProgramCentral.Common.ActualEndDate = Факт. дата завершения
+emxGSPI.Column.GSPI_Specialization.Approved = Факт

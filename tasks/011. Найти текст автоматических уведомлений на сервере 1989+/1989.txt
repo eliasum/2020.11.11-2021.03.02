@@ -1,0 +1,11 @@
+https://help.3ds.com/SearchEx.aspx?query=notification&version=2020x&lang=english&prod=dsdoc&contextscope=onpremise
+
+https://help.3ds.com/SearchEx.aspx?q=disable+events&sort=&version=2020x&lang=english&prod=dsdoc&contextscope=onpremise
+
+https://help.3ds.com/SearchEx.aspx?query=event&version=2020x&lang=english&prod=DSDoc&contextscope=onpremise
+
+https://3dspace.aogspi.ru/3dspace/common/emxCompInboxDialogFS.jsp?mx.page.filter=unread&suiteKey=Framework&StringResourceFileId=emxFrameworkStringResource&SuiteDirectory=common&widgetId=null&targetLocation=popup&isPopupModal=true&targetLocation=popup
+emxCompInboxDialogFS.jsp
+
+https://help.3ds.com/SearchEx.aspx?q=disable+events&sort=&version=2020x&lang=english&prod=dsdoc&contextscope=onpremise
+

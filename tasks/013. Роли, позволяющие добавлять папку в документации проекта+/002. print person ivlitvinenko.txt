@@ -1,0 +1,74 @@
+person iggladkova
+  email IGGladkova@aogspi.ru
+  fullname Ирина Гладкова
+  phone 5122
+  fax 
+  address 
+  comment 
+  password <RESTRICTED>
+  lattice eService Production
+  access all
+  type application,full
+  admin none
+  enable email
+  enable iconmail
+  assign role GSPI_Controller
+  assign role GSPI
+  assign role Grant.GSPI.iggladkova_PRJ
+  assign role MicrosoftOffice User
+  assign role Employee
+  assign role ctx::VPLMCreator.GSPI.PROD
+  assign role Exchange User
+  assign role GSPI_ProjectUser
+  assign role GSPI_GIP
+  assign role ctx::Project User.GSPI.PROD
+  nothidden
+  property Company Key value 00000000000000000001
+  property IconMailLanguagePreference value ru
+  property preference_Command value GSPI_MyTasks
+  property preference_Currency value As Entered
+  property preference_DaylightSaving value No
+  property preference_DefaultSecurityContext value VPLMCreator.GSPI.PROD
+  property preference_TimeZone value Europe/Moscow
+  property preference_UnitOfMeasure value Metric
+  property preference_VPLMIntegVPLMContext value VPLMCreator.GSPI.PROD
+  created 1/28/2020 1:33:00 AM
+  modified 1/26/2021 12:34:52 PM
+  history  type:create user:User Agent date:1/28/2020 1:33:00 AM text:add person iggladkova enable iconmail enable email access all vault 'eService Production' email IGGladkova@aogspi.ru
+  history  type:modify user:User Agent date:1/28/2020 1:33:00 AM text:modify person iggladkova property preference_Currency value Dollar
+  history  type:modify user:User Agent date:1/28/2020 1:33:00 AM text:modify person iggladkova property 'Company Key' value 00000000000000000001
+  history  type:modify user:User Agent date:1/28/2020 1:33:00 AM text:modify person iggladkova assign role Grant.GSPI.iggladkova_PRJ
+  history  type:modify user:User Agent date:1/28/2020 1:33:00 AM text:modify person iggladkova assign role GSPI
+  history  type:modify user:User Agent date:1/28/2020 1:33:00 AM text:modify person iggladkova phone 5122
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova fullname 'Ирина Гладкова'
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova email IGGladkova@aogspi.ru
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova password ********
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova assign role 'ctx::Project User.GSPI.PROD'
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:mod person iggladkova assign role 'ctx::Project User.GSPI.PROD'
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova property preference_DefaultSecurityContext value 'Project User.GSPI.PROD'
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova property preference_VPLMIntegVPLMContext value 'Project User.GSPI.PROD'
+  history  type:modify user:admin_platform date:1/28/2020 1:33:01 AM text:modify person iggladkova assign role GSPI_ProjectUser assign role Employee assign role 'MicrosoftOffice User' assign role 'Exchange User' assign role GSPI_ProjectUser
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova type active enable email enable iconmail
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova property preference_Currency value 'As Entered'
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova property preference_UnitOfMeasure value Metric
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova property IconMailLanguagePreference value ru
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova property preference_DaylightSaving value No
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova property preference_TimeZone value Europe/Moscow
+  history  type:modify user:User Agent date:1/28/2020 1:33:01 AM text:modify person iggladkova property preference_Command value GSPI_MyTasks
+  history  type:modify user:admin_platform date:1/28/2020 10:52:56 AM text:modify person iggladkova
+  history  type:modify user:admin_platform date:1/28/2020 10:52:56 AM text:modify person iggladkova
+  history  type:modify user:admin_platform date:1/28/2020 12:23:24 PM text:modify person iggladkova
+  history  type:modify user:admin_platform date:1/28/2020 12:23:24 PM text:modify person iggladkova
+  history  type:modify user:admin_platform date:1/29/2020 6:31:55 PM text:modify person iggladkova
+  history  type:modify user:admin_platform date:1/29/2020 6:31:55 PM text:modify person iggladkova
+  history  type:modify user:User Agent date:6/17/2020 10:10:27 AM text:modify person iggladkova assign role ctx::VPLMCreator.GSPI.PROD
+  history  type:modify user:User Agent date:6/17/2020 10:10:27 AM text:mod person iggladkova assign role ctx::VPLMCreator.GSPI.PROD
+  history  type:modify user:User Agent date:6/17/2020 10:10:28 AM text:modify person iggladkova property preference_DefaultSecurityContext value VPLMCreator.GSPI.PROD
+  history  type:modify user:User Agent date:6/17/2020 10:10:28 AM text:modify person iggladkova property preference_VPLMIntegVPLMContext value VPLMCreator.GSPI.PROD
+  history  type:modify user:admin_platform date:1/21/2021 9:34:12 PM text:modify person iggladkova
+  history  type:modify user:admin_platform date:1/21/2021 9:34:12 PM text:modify person iggladkova
+  history  type:modify user:admin_platform date:1/21/2021 9:36:23 PM text:modify person iggladkova
+  history  type:modify user:admin_platform date:1/21/2021 9:36:23 PM text:modify person iggladkova
+  history  type:modify user:kvanzhenko date:1/26/2021 12:31:21 PM text:modify person iggladkova assign role GSPI_Controller
+  history  type:modify user:kvanzhenko date:1/26/2021 12:34:03 PM text:modify person iggladkova assign role GSPI_GIP assign role GSPI_SeniorProjectEngineer
+  history  type:modify user:kvanzhenko date:1/26/2021 12:34:52 PM text:modify person iggladkova remove assign role GSPI_SeniorProjectEngineer

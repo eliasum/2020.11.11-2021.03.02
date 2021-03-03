@@ -1,0 +1,9 @@
+modify businessobject 'Project Space' 'Вьетнам_ЦЯНТ_Предзаказ_М_132_УЧЕБНЫЙ' 421611589578285 owner dvbaranov
+
+print businessobject 'Project Space' 'Вьетнам_ЦЯНТ_Предзаказ_М_132_УЧЕБНЫЙ' 421611589578285
+
+list businessobject
+
+set context user creator;
+
+modify businessobject 'Project Space' 'Вьетнам_ЦЯНТ_Предзаказ_М_132_УЧЕБНЫЙ' 421611589578285 owner policy POLICY_NAME 

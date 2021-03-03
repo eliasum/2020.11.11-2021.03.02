@@ -1,0 +1,30 @@
+#https://help.3ds.com/2020x/english/dsdoc/mqlreferencemap/mql-r-query-temporary-query.htm?contextscope=onpremise
+
+temporary query owner imminin;
+
+temporary query bus GSPI_Document * * querytrigger owner imminin;
+
+temporary query bus GSPI_Document * * querytrigger owner imminin select to.from;
+
+print bus 'Project Space' 'Тестовый проект НФ' 621598524770737 select from[R*,N*].to.owner from.to.current;
+
+print bus  'Project Space' 'Тестовый проект НФ' 621598524770737 select from.to.owner from.to.current;
+
+temp query bus * * * where "type.kindof[Document]";
+
+temporary query bus 'Project Space' 'Тестовый проект НФ' 621598524770737 select relationship[Effort].to.name;
+temporary query bus 'Project Space' 'Тестовый проект НФ' 621598524770737 select relationship[Subtask].to.name;
+temporary query bus 'Project Space' 'Тестовый проект НФ' 621598524770737 select relationship[Data Vaults].to.name;
+
+temporary query bus 'Project Space' 'Тестовый проект НФ' 621598524770737 select relationship[Data Vaults].to.name;
+
+print businessobject 'Workspace Vault' 'Документация проекта' 5D8C390000000AE45F478D62000006F1
+temporary query bus 'Workspace Vault' 'Документация проекта' 5D8C390000000AE45F478D62000006F1 select relationship[Vaulted Documents Rev2].to.name;
+
+#id 'Тестовый проект НФ'
+print bus 'Project Space' 'Тестовый проект НФ' 621598524770737 select id dump
+
+
+
+
+

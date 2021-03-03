@@ -1,0 +1,38 @@
+#businessobject: 
+
+Work Calendar 5 рабочих дней 21592214589277	https://3dspace.aogspi.ru/3dspace/common/emxNavigator.jsp?objectId=42198.4965.53688.14005
+Project Concept Боливия_ЦЯИТ1_EPCСontract 21583916961857
+Project Concept Единый стройзаказчик_Барнаул_Алатйский краевой онко диспансер_Гос контракт  Ф2020017561 851611555024338	https://3dspace.aogspi.ru/3dspace/common/emxNavigator.jsp?objectId=42198.4965.12039.62477
+
+#Поиск в UA: add calendar
+https://help.3ds.com/SearchEx.aspx?q=add+calendar&sort=&version=2020x&lang=english&prod=DSDoc&contextscope=onpremise
+
+#Добавление, чтобы показать календарь в каком-то месте
+https://help.3ds.com/2020x/english/dsdoc/apradminmap/apr-t-visualcal-addcalplace.htm?contextscope=onpremise
+
+#Настройка дизайна и разработки коллекций
+https://help.3ds.com/2020x/english/DSDoc/AprAdminMap/apr-m-customize-sb.htm?ContextScope=onpremise&id=206e6691617348278aeb04a2bdd93757#Pg0
+
+#Страница Рабочих Календарей
+https://help.3ds.com/2020x/english/DSDoc/PrgUserMap/prg-r-calendars.htm?ContextScope=onpremise
+
+#Поиск в UA: COMPONENT_DIR
+https://help.3ds.com/SearchEx.aspx?query=COMPONENT_DIR&version=2020x&lang=english&prod=dsdoc&contextscope=onpremise
+
+#О макросах и выражениях в компонентах пользовательского интерфейса
+https://help.3ds.com/2020x/english/dsdoc/dtecustomizingmap/dte-c-dynamicui-macro.htm?ContextScope=onpremise#ix-${COMPONENT_DIR}
+
+#Пользовательский Интерфейс
+https://help.3ds.com/2020x/english/DSDoc/DteCustomizingMap/dte-m-componentreview-ui-sb.htm?ContextScope=onpremise&id=7a03062cc34a4a0e95d4c84dfdbb3fd7#Pg0
+user interface (UI) = configurable UI components residing in the database + JavaServer Pages (JSPs) packaged in the war file
+
+#Веб-Формы
+https://help.3ds.com/2020x/english/DSDoc/DteCustomizingMap/dte-m-forms-sb.htm?ContextScope=onpremise
+
+#О формах (emxForm. jsp)
+https://help.3ds.com/2020x/english/DSDoc/DteCustomizingMap/dte-c-form.htm?ContextScope=onpremise
+
+#Создание страницы формы
+https://help.3ds.com/2020x/english/DSDoc/DteCustomizingMap/dte-t-form.htm?ContextScope=onpremise&id=34f9ebf4e6c4416faaa1f6c211cf7117#Pg0
+https://3dspace.aogspi.ru/3dspace/common/emxForm.jsp?form=PMCProjectDetailsViewForm&mode=edit&objectId=42198.4965.12039.62477	#детальная форма Свойства
+https://3dspace.aogspi.ru/3dspace/common/emxNavigator.jsp?collabSpace=PROD&Editable=true

@@ -1,0 +1,7 @@
+Search "Отправлено" (5 hits in 1 files)
+  d:\Work\MQL\pages 3dspace.aogspi.ru\emxProgramCentral.txt (5 hits)
+	Line 3091: emxProgramCentral.WeeklyTimesheet.submitted = Отправлено
+	Line 3100: emxProgramCentral.WeeklyTimesheet.DeleteEffortAlert = Нельзя удалить табель. Один из табелей находится в состоянии утверждено или отправлено на утверждение.
+	Line 3112: emxProgramCentral.WeeklyTimesheet.Submit = Отправлено
+	Line 3686: emxProgramCentral.Experiment.CreateExperimentWarning = Создание эксперимент может занять время (по несколько минут) в зависимости от размера проекта. Уведомление по электронной почте будет отправлено после эксперимента. Вы хотите продолжить?
+	Line 3690: emxProgramCentral.ProjectBaseline.CreateWarning = Создание базового плана может занять время (до нескольких минут) в зависимости от размера проекта. После создания базового плана будет отправлено уведомление по электронной почте. Вы хотите продолжить?

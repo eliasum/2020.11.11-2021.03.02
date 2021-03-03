@@ -1,0 +1,18 @@
+    Company Representative
+    Employee
+    Exchange User
+    GSPI
+    GSPI_Administrator
+    GSPI_GIP
+    GSPI_IssueAdmin
+    GSPI_ProjectManager
+    GSPI_ProjectUser
+    Grant.GSPI.mdbykov_PRJ
+    MicrosoftOffice User
+    Project Lead
+    Project User
+    ctx::Exchange User.GSPI.GLOBAL
+    ctx::Project Lead.GSPI.GLOBAL
+    ctx::Project User.GSPI.GLOBAL
+    ctx::VPLMAdmin.GSPI.Default
+    ctx::VPLMProjectLeader.GSPI.PROD
